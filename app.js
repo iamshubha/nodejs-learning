@@ -5,9 +5,10 @@ const app = express()
 
 app.use((req,res,next)=>{
     console.log("shubha")
+    res.send("hi its for github")
     next()
 })
-app.use((req,res)=>{
+app.get('/git',(req,res)=>{
     console.log("shubha")
     res.send("shubha")
 })
